@@ -2,7 +2,7 @@
 
 Uninstall node modules from JavaScript.
 
-[![Build Status](https://travis-ci.org/1000ch/install-unpackage.svg?branch=master)](https://travis-ci.org/1000ch/install-unpackage)
+[![Build Status](https://travis-ci.org/1000ch/uninstall-package.svg?branch=master)](https://travis-ci.org/1000ch/uninstall-package)
 
 ## Install
 
@@ -23,7 +23,7 @@ uninstall('co', '--save').then(result => {
 
 ## API
 
-### `uninstall(packages, [options])`
+### `uninstall(packages, [options], [execOptions])`
 
 #### packages
 
@@ -32,6 +32,10 @@ Type: `String`, `Array<String>`
 #### options
 
 Type: `String`, `Array<String>`, `Object`
+
+#### execOptions
+
+Type: [`Object`](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback)
 
 ## License
 
