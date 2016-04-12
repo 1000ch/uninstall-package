@@ -1,0 +1,32 @@
+{
+  "name": "uninstall-package",
+  "version": "0.0.0",
+  "description": "Uninstall node modules from JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && tape test | faucet"
+  },
+  "repository": "1000ch/uninstall-package",
+  "keywords": [
+    "npm",
+    "uninstall",
+    "package"
+  ],
+  "author": "1000ch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1000ch/uninstall-package/issues"
+  },
+  "homepage": "https://github.com/1000ch/uninstall-package#readme",
+  "devDependencies": {
+    "@1000ch/eslint-config": "^0.4.0",
+    "blue-tape": "^0.2.0",
+    "eslint": "^2.7.0",
+    "faucet": "0.0.1",
+    "install-package": "0.0.0",
+    "tape": "^4.5.1"
+  },
+  "eslintConfig": {
+    "extends": "@1000ch"
+  }
+}
