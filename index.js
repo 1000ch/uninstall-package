@@ -60,7 +60,7 @@ function normalizeOptions(args) {
   return opts;
 }
 
-module.exports = function(packages, options, execOptions) {
+module.exports = function (packages, options, execOptions) {
   let args = ['npm', 'uninstall'];
   let pkgs = normalizePackages(packages);
   let opts = normalizeOptions(options);
@@ -87,6 +87,7 @@ module.exports = function(packages, options, execOptions) {
           stderr
         });
       }
+
       return resolve({
         error,
         stdout,
