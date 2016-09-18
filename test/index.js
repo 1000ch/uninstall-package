@@ -33,7 +33,7 @@ test('uninstall not exist package', t => {
     .then(() => uninstall('not-exist-package'))
     .then(result => {
       t.equal(result.error, null);
-      t.ok(result.stdout || result.stderr);
+      t.ok(!result.stdout && !result.stderr);
     });
 });
 
