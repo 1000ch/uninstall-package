@@ -1,8 +1,6 @@
-# uninstall-package
+# uninstall-package [![Build Status](https://travis-ci.org/1000ch/uninstall-package.svg?branch=master)](https://travis-ci.org/1000ch/uninstall-package)
 
 Uninstall node modules from JavaScript.
-
-[![Build Status](https://travis-ci.org/1000ch/uninstall-package.svg?branch=master)](https://travis-ci.org/1000ch/uninstall-package)
 
 ## Install
 
@@ -39,4 +37,4 @@ Type: [`Object`](https://nodejs.org/api/child_process.html#child_process_child_p
 
 ## License
 
-MIT: http://1000ch.mit-license.org
+[MIT](https://1000ch.mit-license.org) © [Shogo Sensui](https://github.com/1000ch)
