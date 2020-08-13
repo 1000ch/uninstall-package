@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "ava": "^3.10.1",
-    "install-package": "^0.3.0",
+    "install-package": "^1.0.0",
     "xo": "^0.33.0"
   },
   "engines": {
