@@ -1,4 +1,4 @@
-# uninstall-package [![Build Status](https://travis-ci.org/1000ch/uninstall-package.svg?branch=master)](https://travis-ci.org/1000ch/uninstall-package)
+# uninstall-package [![test](https://github.com/1000ch/uninstall-package/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/1000ch/uninstall-package/actions/workflows/test.yml)
 
 Uninstall node modules from JavaScript.
 
