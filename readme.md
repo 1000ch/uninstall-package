@@ -11,7 +11,7 @@ npm install uninstall-package
 ## Usage
 
 ```javascript
-const uninstall = require('uninstall-package');
+import uninstall from 'uninstall-package';
 
 uninstall('co', '--save').then(result => {
   console.log(result.stdout);
