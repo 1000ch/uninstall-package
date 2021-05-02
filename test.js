@@ -1,7 +1,6 @@
-'use strict';
-const test = require('ava');
-const install = require('install-package');
-const uninstall = require('..');
+import test from 'ava';
+import install from 'install-package';
+import uninstall from './index.js';
 
 test.beforeEach(async () => {
   await install(['noop2', 'noop3'], '--no-save');
@@ -13,7 +12,7 @@ test('uninstall a package', async t => {
 
     t.not(stdout, null);
   } catch (error) {
-    t.fail(error);
+    t.fail(`error happened unexpectedly: ${error.message}`);
   }
 });
 
@@ -23,7 +22,7 @@ test('uninstall multiple packages', async t => {
 
     t.not(stdout, null);
   } catch (error) {
-    t.fail(error);
+    t.fail(`error happened unexpectedly: ${error.message}`);
   }
 });
 
@@ -33,7 +32,7 @@ test('uninstall not exist package', async t => {
 
     t.not(stdout, null);
   } catch (error) {
-    t.fail(error);
+    t.fail(`error happened unexpectedly: ${error.message}`);
   }
 });
 
@@ -42,6 +41,7 @@ test('throw exception when package is blank', async t => {
     await uninstall(null);
   } catch (error) {
     t.not(error, null);
+    t.pass();
   }
 });
 
@@ -51,7 +51,7 @@ test('accept string options', async t => {
 
     t.not(stdout, null);
   } catch (error) {
-    t.fail(error);
+    t.fail(`error happened unexpectedly: ${error.message}`);
   }
 });
 
@@ -61,7 +61,7 @@ test('accept array options', async t => {
 
     t.not(stdout, null);
   } catch (error) {
-    t.fail(error);
+    t.fail(`error happened unexpectedly: ${error.message}`);
   }
 });
 
@@ -71,6 +71,6 @@ test('accept object options', async t => {
 
     t.not(stdout, null);
   } catch (error) {
-    t.fail(error);
+    t.fail(`error happened unexpectedly: ${error.message}`);
   }
 });
