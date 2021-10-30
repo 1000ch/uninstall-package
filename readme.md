@@ -1,4 +1,4 @@
-# uninstall-package [![test](https://github.com/1000ch/uninstall-package/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/1000ch/uninstall-package/actions/workflows/test.yml)
+# uninstall-package ![test](https://github.com/1000ch/uninstall-package/actions/workflows/test.yml/badge.svg?branch=main)
 
 Uninstall node modules from JavaScript.
 
